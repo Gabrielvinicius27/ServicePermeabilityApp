@@ -92,7 +92,7 @@ class MainClass(Resource):
 
 	def options(self):
 		response = make_response()
-		response.headers.add("Access-Control-Allow-Origin", "https://predicao-permeancia.herokuapp.com, http://predicao-permeancia.herokuapp.com")
+		response.headers.add("Access-Control-Allow-Origin", "*")
 		response.headers.add('Access-Control-Allow-Headers', "Origin, Content-type, Accept")
 		response.headers.add('Access-Control-Allow-Methods', "GET, POST, OPTIONS")
 		return response
