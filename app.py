@@ -56,7 +56,7 @@ def predicao(data):
 	with open(filename, 'rb') as file:
 		model = pickle.load(file)
 
-	df2 = pd.read_csv('Dados3.csv',nrows=1)
+	df2 = pd.read_csv('Dados.csv',nrows=1)
 	df2.drop(columns=['PP_PERMEANCIA'], inplace=True)
 
 	for column in df2.columns:
